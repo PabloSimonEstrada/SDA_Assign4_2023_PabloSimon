@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Start of RelativeLayout which serves as a container for list items -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:id="@+id/listItemLayout"
+    android:background="@color/colorSecondary">
+
+    <!-- ImageView for displaying the book's image -->
+    <ImageView
+        android:id="@+id/bookImage"
+        android:layout_width="92dp"
+        android:layout_height="129dp"
+        android:contentDescription="@string/images_desc"
+        android:src="@drawable/sku10001"
+        android:layout_marginEnd="16dp" />
+
+    <!-- TextView for displaying the author's name -->
+    <TextView
+        android:id="@+id/authorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/bookImage"
+        android:layout_alignTop="@+id/bookImage"
+        android:text="@string/plc_author"
+        android:textColor="@color/listText"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <!-- TextView for displaying the book's title -->
+    <TextView
+        android:id="@+id/bookTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/authorText"
+        android:layout_toEndOf="@+id/bookImage"
+        android:text="@string/plc_title"
+        android:textColor="@color/listText"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:layout_marginTop="8dp" />
+
+    <!-- Button for the "Check Out" action -->
+    <Button
+        android:id="@+id/out_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/bookTitle"
+        android:text="@string/check_out"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/holo_blue_light"
+        android:textColor="@android:color/white" />
+
+    <!-- View for the horizontal divider line below each list item -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/out_button"
+        android:layout_marginTop="16dp"
+        android:background="@color/border_shade" />
+
+</RelativeLayout> <!-- End of RelativeLayout -->

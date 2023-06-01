@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- The main ScrollView allows the content to be scrolled if it exceeds the screen size -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".Welcome">
+
+    <!-- This ConstraintLayout contains all the main elements of the welcome screen -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/welcome_layout"
+        android:background="@color/colorSecondary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- This TextView displays a welcome message to the user -->
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/welcome_tittle"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- This TextView provides information about the book club's meetings and lending hours -->
+        <TextView
+            android:id="@+id/officeHours"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/welcome_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/welcomeText" />
+
+        <!-- This ImageView shows a picture related to the welcome message -->
+        <ImageView
+            android:id="@+id/welcomeImage"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/library"
+            android:src="@drawable/welcome"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/officeHours" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

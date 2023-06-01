@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">SDA Assign4_2022</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_ragment">One string</string>
+    <string name="images_desc">Book Thumb</string>
+    <string name="plc_author">Edgar Rice Burroughs</string>
+    <string name="plc_title">Tarzan and the Golden Lion</string>
+    <string name="border">border item</string>
+    <string name="check_out">Check Out</string>
+    <string name="library">library</string>
+    <string name="Success">Success! Your order has been placed.</string>
+    <string name="error_placing_order">Error placing order. Please try again later.</string>
+    <string name="check_out_book">Check out %1$s</string>
+    <string name="order_summary">Order Summary:\nBook: %1$s \nUser: %2$s \nBorrower ID: %3$s \nRequired Date: %4$s</string>
+    <string name="welcome_tittle">Welcome to Our Book Club!</string>
+    <string name="welcome_text">Meetings: Thursdays, 18:00 - 21:00 | Lending hours: Monday - Saturday, 10:00 - 17:00</string>
+    <string name="borrower_id">Borrower ID</string>
+    <string name="save_details">Save Details</string>
+    <string name="reset_details">Reset Details</string>
+    <string name="select_date">Select Date</string>
+    <string name="send_order">Send Order</string>
+    <string name="check_out_bookname">Check out BookName</string>
+    <string name="book_availability">Book is available or Book will be available on this date: DATE</string>
+    <string name="borrower_name">Borrower Name</string>
+    <string name="email_address">Email address</string>
+    <string name="book_is_available">Book is available</string>
+    <string name="book_is_unavailable">Book is unavailable</string>
+</resources>

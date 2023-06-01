@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "873348028149",
+    "project_id": "assign4pablosimonestrada",
+    "storage_bucket": "assign4pablosimonestrada.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:873348028149:android:4726403c1ac07cbd1557bc",
+        "android_client_info": {
+          "package_name": "com.example.sdaassign4_2022"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCq3bdzrnP-jmIw17pSReZw1v7I_IhR6Ss"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

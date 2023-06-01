@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Root ScrollView allows content to be scrollable when there's not enough space on the screen -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSecondary"
+    android:fillViewport="true"
+    tools:context=".Settings">
+
+    <!-- ConstraintLayout is used to position UI elements based on constraints to sibling views and parent layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/setting_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- TextInputLayout for inputting borrower name with clear text icon -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/userNameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/borrower_name"
+            app:boxStrokeColor="@color/colorAccent"
+            app:endIconMode="clear_text"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <!-- TextInputEditText for entering borrower name -->
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- TextInputLayout for inputting email with clear text icon -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/email_address"
+            app:boxStrokeColor="@color/colorAccent"
+            app:endIconMode="clear_text"
+            app:layout_constraintTop_toBottomOf="@+id/userNameLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <!-- TextInputEditText for entering email -->
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- TextInputLayout for inputting borrower ID with clear text icon -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/borrowerIDLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/borrower_id"
+            app:boxStrokeColor="@color/colorAccent"
+            app:endIconMode="clear_text"
+            app:layout_constraintTop_toBottomOf="@+id/emailLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <!-- TextInputEditText for entering borrower ID -->
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/borrowerID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Button for saving the details entered by the user -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/save_details"
+            android:backgroundTint="@color/colorAccent"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/borrowerIDLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Button for resetting the details entered by the user -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/reset_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/reset_details"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
